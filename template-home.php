@@ -14,7 +14,25 @@ get_header();
         </div>
     </div>
 </div>
-<div class="blog-section">
+<div class="our-work-section">
+    <div class="container p-5">
+        <div class="row our-work-section_top">
+            <div class="col-6 mx-auto">
+                <h3>Our work</h3>
+                <p>Sed arcu libero, hendrerit at vulputate ut, elementum in orci. Suspendisse nec ultrices turpis. Donec ac ex augue. Mauris in ligula ac magna congue rutrum.</p>
+            </div>
+        </div>
+        <div class="our-work-section_projects container">
+            <div class="projects-showcase">
+                <div class="box">1 </div>
+                <div class="box"> 2</div>
+                <div class="box"> 3</div>
+                <div class="box"> 4</div>
+                <div class="box"> 5</div>
+                <div class="box"> 6</div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

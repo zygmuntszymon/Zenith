@@ -14,6 +14,7 @@ Text Domain: zenith
 
 :root {
     --main-color: rgb(76, 23, 173);
+    --sec-color: #1A181B;
 }
 
 body {
@@ -24,6 +25,8 @@ header {
     height: 100px;
     align-items: center;
     background-color: white;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-brand {
@@ -96,8 +99,34 @@ header {
     margin-top: 100%;
 }
 
-.blog-section {
-    height: 500px;
+.our-work-section {
     width: 100%;
-    background-color: red;
+    height: 500px;
+    background-color: var(--sec-color);
+    color: white;
+    text-align: center;
+}
+
+.our-work-section_top>.col-6>h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.our-work-section_top>.col-6>p {
+    color: rgb(145, 145, 145);
+}
+
+.projects-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.box {
+    height: 250px;
+    width: 300px;
+    border: 1px solid red;
+    background-color: blue;
 }
