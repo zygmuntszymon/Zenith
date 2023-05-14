@@ -24,12 +24,30 @@ get_header();
         </div>
         <div class="our-work-section_projects container">
             <div class="projects-showcase">
-                <div class="box">1 </div>
-                <div class="box"> 2</div>
-                <div class="box"> 3</div>
-                <div class="box"> 4</div>
-                <div class="box"> 5</div>
-                <div class="box"> 6</div>
+                <a href="">
+                    <div class="box">
+                        <div class="box-overlay"></div>
+                        <img src="<?php echo get_template_directory_uri() . '/img/1.jpg' ?>" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box">
+                        <div class="box-overlay"></div>
+                        <img src="<?php echo get_template_directory_uri() . '/img/2.jpg' ?>" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box">
+                        <div class="box-overlay"></div>
+                        <img src="<?php echo get_template_directory_uri() . '/img/3.jpg' ?>" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box">
+                        <div class="box-overlay"></div>
+                        <img src="<?php echo get_template_directory_uri() . '/img/4.jpg' ?>" alt="">
+                    </div>
+                </a>
             </div>
         </div>
     </div>

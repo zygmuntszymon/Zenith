@@ -22,11 +22,12 @@ body {
 }
 
 header {
-    height: 100px;
+    padding: 20px;
     align-items: center;
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .navbar-brand {
@@ -101,7 +102,8 @@ header {
 
 .our-work-section {
     width: 100%;
-    height: 500px;
+    min-height: 94vh;
+    height: fit-content;
     background-color: var(--sec-color);
     color: white;
     text-align: center;
@@ -117,16 +119,61 @@ header {
 }
 
 .projects-showcase {
+
+    padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 250px);
+    justify-content: center;
+    align-content: center;
 }
 
 .box {
-    height: 250px;
-    width: 300px;
-    border: 1px solid red;
-    background-color: blue;
+    height: 100%;
+    width: 100%;
+    margin: auto auto;
+    overflow: hidden;
+    transform: scale(1);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.box img {
+    height: auto;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.box:hover img {
+    transform: scale(1.1);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.box-overlay {
+    background-color: rgba(20, 20, 20, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+@media screen and (max-width:700px) {
+    .projects-showcase {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-template-rows: repeat(4, 240px);
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .box {
+        height: 90%;
+        width: 90%;
+
+    }
 }
