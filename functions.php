@@ -17,6 +17,7 @@ function zenith_config()
         )
     );
     add_theme_support('post-thumbnails');
+    add_theme_support('custom-logo');
     add_image_size('zenith-hero', 1920, 920, array(
         'center', 'center'
     ));

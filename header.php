@@ -13,7 +13,15 @@
     <header class="header d-md-flex my-auto">
         <nav class="container navbar navbar-expand-md zenith-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Zenith</a>
+                <a class="navbar-brand" href="#">
+                    <?php if (has_custom_logo()) { ?>
+                        <?php the_custom_logo() ?>
+                    <?php } else { ?>
+                        <a href="<?php echo esc_url(home_url('/')) ?>">
+                            <p class="site-title"><?php bloginfo('title') ?></p>
+                        </a>
+                    <?php } ?>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
