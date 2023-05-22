@@ -26,8 +26,13 @@ get_header();
             <div class="projects-showcase">
                 <a href="">
                     <div class="box">
-                        <div class="box-overlay"></div>
+
+
+                        <div class="box-overlay">
+                            <p class="project-title">Project</p>
+                        </div>
                         <img src="<?php echo get_template_directory_uri() . '/img/1.jpg' ?>" alt="">
+
                     </div>
                 </a>
                 <a href="">

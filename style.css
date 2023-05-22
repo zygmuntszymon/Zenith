@@ -126,6 +126,7 @@ header {
     grid-template-rows: repeat(2, 250px);
     justify-content: center;
     align-content: center;
+    grid-gap: 10px;
 }
 
 .box {
@@ -142,14 +143,12 @@ header {
     height: auto;
     width: 100%;
     transition: all .5s ease-in-out;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
 }
 
 .box:hover img {
     transform: scale(1.1);
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
 }
 
 .box-overlay {
@@ -158,6 +157,15 @@ header {
     height: 100%;
     position: absolute;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
 }
 
 @media screen and (max-width:700px) {
