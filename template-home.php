@@ -55,8 +55,31 @@ get_header();
                 </a>
             </div>
         </div>
-    </div>
 
+    </div>
+    <div class="news-section">
+        <?php
+        $recent = new WP_Query(array(
+            'type' => 'post',
+            'posts_per_page' => 3
+        ))
+
+        ?>
+        <div class="container">
+            <?php
+            while ($recent->have_posts()) {
+                $recent->the_post();
+            ?>
+                <div class="recent-post">
+                    <h2><?php the_title() ?></h2>
+                    <?php echo wordwrap(get_the_content(), 22) ?>
+                </div>
+
+            <?php
+            }
+            ?>
+        </div>
+    </div>
 </div>
 
 
