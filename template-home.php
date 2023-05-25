@@ -71,8 +71,10 @@ get_header();
                 $recent->the_post();
             ?>
                 <div class="recent-post">
-                    <h2><?php the_title() ?></h2>
-                    <?php echo wordwrap(get_the_content(), 22) ?>
+                    <h2 class="recent-post_title"><?php the_title() ?></h2>
+                    <p class="recent-post_content"><?php echo wp_trim_words(get_the_content(), 18, '...') ?></p>
+                    <br>
+                    <a class="see-more-btn" href="<?php echo the_permalink() ?>">See more</a>
                 </div>
 
             <?php

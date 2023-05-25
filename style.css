@@ -17,6 +17,12 @@ Text Domain: zenith
     --sec-color: #1A181B;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif !important;
 }
@@ -25,15 +31,21 @@ header {
     padding: 20px;
     align-items: center;
     background-color: white;
-    position: sticky;
     top: 0;
     z-index: 999;
 }
 
 .navbar-brand {
+    text-decoration: none;
+    color: inherit;
     font-weight: bold;
     font-size: 1.5rem !important;
     color: var(--main-color) !important;
+}
+
+.navbar-brand p {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .navbar-collapse {
@@ -166,6 +178,50 @@ header {
     font-size: 2rem;
     color: white;
     font-weight: bold;
+}
+
+.news-section {
+    background-color: white;
+    padding: 100px 10px;
+    color: black;
+}
+
+.recent-post {
+    margin-bottom: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px 15px;
+    height: fit-content;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.see-more-btn {
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    outline: none;
+    background-color: var(--sec-color);
+}
+
+.recent-post_title {
+    top: 0;
+    position: absolute;
+    font-size: 1.5rem;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--sec-color);
+    color: white;
+    padding: 10px 0px;
+}
+
+.recent-post_content {
+    margin-top: 50px;
 }
 
 @media screen and (max-width:700px) {
