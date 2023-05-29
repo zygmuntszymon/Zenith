@@ -159,9 +159,9 @@ header {
     filter: grayscale(0.8);
 }
 
-.box:hover img {
+/* .box:hover img {
     transform: scale(1.1);
-}
+} */
 
 .box-overlay {
     background-color: rgba(20, 20, 20, 0.3);
@@ -187,18 +187,16 @@ header {
 }
 
 .recent-post {
-    margin-bottom: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 30px 15px;
     height: fit-content;
     max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    margin: 15px 15px;
 }
 
 .see-more-btn {
@@ -221,10 +219,24 @@ header {
 }
 
 .recent-post_content {
-    margin-top: 50px;
+    margin: 50px;
 }
 
-@media screen and (max-width:700px) {
+.posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.news-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:875px) {
     .projects-showcase {
         padding: 2rem;
         display: grid;
@@ -238,6 +250,9 @@ header {
     .box {
         height: 90%;
         width: 90%;
+    }
 
+    .posts {
+        flex-direction: column;
     }
 }

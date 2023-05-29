@@ -61,11 +61,12 @@ get_header();
         <?php
         $recent = new WP_Query(array(
             'type' => 'post',
-            'posts_per_page' => 3
+            'posts_per_page' => 2
         ))
 
         ?>
-        <div class="container">
+        <p class="news-header">Latest News</p>
+        <div class="container posts">
             <?php
             while ($recent->have_posts()) {
                 $recent->the_post();
