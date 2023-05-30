@@ -1,3 +1,3 @@
 # Zenith
 Minimalistic Wordpress Theme
-![Screenshot](screenshot.png)
+![Screenshot](zenith.local_.png)
