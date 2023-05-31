@@ -273,8 +273,6 @@ header {
     padding: 35px 0;
 }
 
-.singe-post_content--main p {}
-
 @media screen and (max-width:875px) {
     .projects-showcase {
         padding: 2rem;
