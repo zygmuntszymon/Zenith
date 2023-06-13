@@ -54,6 +54,7 @@ get_header();
                     </div>
                 </a>
             </div>
+            <a href="#">See all projects</a>
         </div>
 
     </div>
@@ -82,6 +83,7 @@ get_header();
             }
             ?>
         </div>
+
     </div>
 </div>
 
