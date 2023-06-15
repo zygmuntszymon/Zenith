@@ -35,6 +35,11 @@ header {
     z-index: 999;
 }
 
+.header-black-bg {
+    background-color: #1A181B;
+    color: white;
+}
+
 .navbar-brand {
     text-decoration: none;
     color: inherit;
@@ -43,7 +48,16 @@ header {
     color: var(--main-color) !important;
 }
 
-.navbar-brand p {
+.navbar-brand-white {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.5rem !important;
+    color: white;
+}
+
+.navbar-brand,
+.navbar-brand-white p {
     margin-top: auto;
     margin-bottom: auto;
 }

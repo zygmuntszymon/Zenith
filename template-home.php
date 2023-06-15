@@ -54,7 +54,7 @@ get_header();
                     </div>
                 </a>
             </div>
-            <a href="#">See all projects</a>
+            <a href="https://github.com/zygmuntszymon" target="_blank">See all projects</a>
         </div>
 
     </div>
@@ -83,6 +83,7 @@ get_header();
             }
             ?>
         </div>
+        <a href="<?php echo site_url("blog") ?>" target="_blank">See all news</a>
 
     </div>
 </div>

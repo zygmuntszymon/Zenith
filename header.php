@@ -10,17 +10,27 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="header d-md-flex my-auto">
+    <header class="header d-md-flex my-auto <?php if (!is_front_page()) echo 'header-black-bg navbar-brand-white' ?>">
         <nav class="container navbar navbar-expand-md zenith-navbar">
             <div class="container-fluid">
 
                 <?php if (has_custom_logo()) { ?>
 
-                    <a class="navbar-brand" href="#">
+                    <a class=" <?php
+                                if (!is_front_page()) {
+                                    echo 'navbar-brand-white';
+                                } else {
+                                    echo 'navbar-brand';
+                                } ?>" href="#">
                         <?php the_custom_logo() ?>
                     </a>
                 <?php } else { ?>
-                    <a class="navbar-brand" href="<?php echo esc_url(home_url('/')) ?>">
+                    <a class="<?php
+                                if (!is_front_page()) {
+                                    echo 'navbar-brand-white';
+                                } else {
+                                    echo 'navbar-brand';
+                                } ?>" href="<?php echo esc_url(home_url('/')) ?>">
                         <p><?php bloginfo('title') ?></p>
                     </a>
                 <?php } ?>
