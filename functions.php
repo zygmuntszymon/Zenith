@@ -2,6 +2,7 @@
 function zenith_scripts()
 {
     wp_enqueue_style('zenith_style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . '/style.css'), 'all');
+    wp_enqueue_style('zenith_icons', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", array(), '6.4.0', 'all');
     wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js', array('jquery'), '5.3.0', true);
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css', array(), '5.3.0', 'all');
 }
@@ -24,6 +25,7 @@ function zenith_config()
     add_image_size('post-image', 900, 480, array(
         'center', 'center'
     ));
+    add_image_size('our-team', 350, 280, array('center', 'center'));
 }
 add_action('after_setup_theme', 'zenith_config', 0);
 
