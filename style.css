@@ -34,6 +34,7 @@ header {
     background-color: white;
     top: 0;
     z-index: 999;
+    user-select: none;
 }
 
 .header-black-bg {
@@ -47,20 +48,15 @@ header {
     font-weight: bold;
     font-size: 1.5rem !important;
     color: var(--main-color) !important;
-}
-
-.navbar-brand-white {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-    font-size: 1.5rem !important;
-    color: white;
+    cursor: pointer;
 }
 
 .navbar-brand,
 .navbar-brand-white p {
     margin-top: auto;
     margin-bottom: auto;
+    user-select: none;
+    cursor: pointer;
 }
 
 .navbar-collapse {
@@ -127,6 +123,13 @@ header {
     color: rgb(145, 145, 145);
 }
 
+.our-work-section_projects>.see-more {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .projects-showcase {
 
     padding: 2rem;
@@ -152,13 +155,15 @@ header {
     height: auto;
     width: 100%;
     transition: all .5s ease-in-out;
-    -webkit-filter: grayscale(0.8);
-    filter: grayscale(0.8);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 
-/* .box:hover img {
+.box:hover img {
     transform: scale(1.1);
-} */
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
 
 .box-overlay {
     background-color: rgba(20, 20, 20, 0.3);
@@ -181,6 +186,13 @@ header {
     background-color: rgb(225, 225, 225);
     padding: 100px 10px;
     color: black;
+}
+
+.news-section>.see-more {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .recent-post {
