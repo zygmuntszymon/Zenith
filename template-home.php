@@ -25,30 +25,27 @@ get_header();
         <div class="our-work-section_projects container">
             <div class="projects-showcase">
                 <a href="">
-                    <div class="box">
-
-
+                    <div class="box hidden">
                         <div class="box-overlay">
                             <p class="project-title">Project</p>
                         </div>
                         <img src="<?php echo get_template_directory_uri() . '/img/1.jpg' ?>" alt="">
-
                     </div>
                 </a>
                 <a href="">
-                    <div class="box">
+                    <div class="box hidden">
                         <div class="box-overlay"></div>
                         <img src="<?php echo get_template_directory_uri() . '/img/2.jpg' ?>" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="box">
+                    <div class="box hidden">
                         <div class="box-overlay"></div>
                         <img src="<?php echo get_template_directory_uri() . '/img/3.jpg' ?>" alt="">
                     </div>
                 </a>
                 <a href="">
-                    <div class="box">
+                    <div class="box hidden">
                         <div class="box-overlay"></div>
                         <img src="<?php echo get_template_directory_uri() . '/img/4.jpg' ?>" alt="">
                     </div>
@@ -72,7 +69,7 @@ get_header();
             while ($recent->have_posts()) {
                 $recent->the_post();
             ?>
-                <div class="recent-post">
+                <div class="recent-post hidden">
                     <h2 class="recent-post_title"><?php the_title() ?></h2>
                     <p class="recent-post_content"><?php echo wp_trim_words(get_the_content(), 18, '...') ?></p>
                     <br>

@@ -103,6 +103,19 @@ header {
     color: white;
     font-weight: bold;
     margin-top: 100%;
+    animation: fade-left 1s;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .our-work-section {
@@ -174,6 +187,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hidden {
+    opacity: 0 !important;
+    transition: all 2s;
+
+}
+
+.show {
+    opacity: 1 !important;
+
 }
 
 .project-title {

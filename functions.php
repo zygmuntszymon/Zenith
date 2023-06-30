@@ -3,8 +3,16 @@ function zenith_scripts()
 {
     wp_enqueue_style('zenith_style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . '/style.css'), 'all');
     wp_enqueue_style('zenith_icons', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", array(), '6.4.0', 'all');
-    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js', array('jquery'), '5.3.0', true);
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css', array(), '5.3.0', 'all');
+
+    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js', array('jquery'), '5.3.0', true);
+    wp_enqueue_script('zenith-main-js', get_template_directory_uri() . '/src/main.js', array('jquery'), '1.0', true);
+    wp_get_script_tag(
+        array(
+            'src'      => get_template_directory_uri() . '/src/main.js',
+            'defer' => true,
+        )
+    );
 }
 
 add_action('wp_enqueue_scripts', 'zenith_scripts');
