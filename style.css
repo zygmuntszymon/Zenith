@@ -164,6 +164,8 @@ header {
     transition: all .5s ease-in-out;
 }
 
+
+
 .box img {
     height: auto;
     width: 100%;
@@ -193,6 +195,18 @@ header {
     opacity: 0 !important;
     transition: all 2s;
 
+}
+
+.hidden:nth-child(2) {
+    transition-delay: 250ms;
+}
+
+.hidden:nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.hidden:nth-child(4) {
+    transition-delay: 750ms;
 }
 
 .show {
