@@ -118,6 +118,16 @@ header {
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .our-work-section {
     width: 100%;
     min-height: 94vh;
@@ -194,7 +204,11 @@ header {
 .hidden {
     opacity: 0 !important;
     transition: all 2s;
+}
 
+.hidden-heading {
+    opacity: 0 !important;
+    transition: all .25s;
 }
 
 .hidden:nth-child(2) {
@@ -211,8 +225,8 @@ header {
 
 .show {
     opacity: 1 !important;
-
 }
+
 
 .project-title {
     font-size: 2rem;
@@ -339,6 +353,16 @@ header {
     padding: 20px;
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    animation: fade-in 1s;
+
+}
+
+.member:nth-child(2) {
+    transition-delay: 250ms;
+}
+
+.member:nth-child(3) {
+    transition-delay: 500ms;
 }
 
 .member-photo {

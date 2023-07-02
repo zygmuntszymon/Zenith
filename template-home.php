@@ -17,7 +17,7 @@ get_header();
 <div class="our-work-section">
     <div class="container p-5">
         <div class="row our-work-section_top">
-            <div class="col-6 mx-auto">
+            <div class="col-6 mx-auto hidden-heading">
                 <h3>Our work</h3>
                 <p>Sed arcu libero, hendrerit at vulputate ut, elementum in orci. Suspendisse nec ultrices turpis. Donec ac ex augue. Mauris in ligula ac magna congue rutrum.</p>
             </div>
@@ -63,7 +63,7 @@ get_header();
         ))
 
         ?>
-        <p class="news-header">Latest News</p>
+        <p class="news-header hidden-heading">Latest News</p>
         <div class="container posts">
             <?php
             while ($recent->have_posts()) {

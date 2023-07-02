@@ -1,4 +1,5 @@
 console.log('Observer looking for...')
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         console.log(entry);
@@ -10,5 +11,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 })
 const project_boxes_hidden = document.querySelectorAll('.hidden');
+const hidden_heading = document.querySelectorAll('.hidden-heading');
+
 project_boxes_hidden.forEach((el) => observer.observe(el));
-console.log(project_boxes_hidden)
+hidden_heading.forEach((el) => observer.observe(el));
+
