@@ -10,8 +10,8 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="header d-md-flex my-auto">
-        <nav class="container navbar navbar-expand-md zenith-navbar">
+    <header class="header d-md-flex my-auto <?php if (!is_front_page()) echo 'header-dark' ?>">
+        <nav class="container navbar navbar-expand-md zenith-navbar ">
             <div class="container-fluid">
 
                 <?php if (has_custom_logo()) { ?>
