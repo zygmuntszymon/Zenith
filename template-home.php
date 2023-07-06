@@ -27,26 +27,32 @@ get_header();
                 <a href="">
                     <div class="box hidden">
                         <div class="box-overlay">
-                            <p class="project-title">Project</p>
+                            <p class="project-title">Project 1</p>
                         </div>
                         <img src="<?php echo get_template_directory_uri() . '/img/1.jpg' ?>" alt="">
                     </div>
                 </a>
                 <a href="">
                     <div class="box hidden">
-                        <div class="box-overlay"></div>
+                        <div class="box-overlay">
+                            <p class="project-title">Project 2</p>
+                        </div>
                         <img src="<?php echo get_template_directory_uri() . '/img/2.jpg' ?>" alt="">
                     </div>
                 </a>
                 <a href="">
                     <div class="box hidden">
-                        <div class="box-overlay"></div>
+                        <div class="box-overlay">
+                            <p class="project-title">Project 3</p>
+                        </div>
                         <img src="<?php echo get_template_directory_uri() . '/img/3.jpg' ?>" alt="">
                     </div>
                 </a>
                 <a href="">
                     <div class="box hidden">
-                        <div class="box-overlay"></div>
+                        <div class="box-overlay">
+                            <p class="project-title">Project 4</p>
+                        </div>
                         <img src="<?php echo get_template_directory_uri() . '/img/4.jpg' ?>" alt="">
                     </div>
                 </a>

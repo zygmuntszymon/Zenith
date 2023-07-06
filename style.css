@@ -270,7 +270,7 @@ header {
 }
 
 .recent-post_content {
-    margin: 50px;
+    margin-top: 50px;
 }
 
 .posts {
@@ -340,7 +340,8 @@ header {
 }
 
 .our-team {
-    height: 600px;
+    height: fit-content;
+    padding: 10px 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
