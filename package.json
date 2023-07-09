@@ -1,0 +1,19 @@
+{
+  "name": "zenith",
+  "version": "1.0.0",
+  "description": "Minimalistic Wordpress Theme\r ![Screenshot](zenith.local_.png)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/scripts": "^26.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
