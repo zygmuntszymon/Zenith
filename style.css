@@ -39,6 +39,7 @@ header {
 
 .header-dark {
     padding: 0 20px;
+    height: 8vh;
 }
 
 .header-black-bg {
@@ -52,15 +53,18 @@ header {
     font-weight: bold;
     font-size: 1.5rem !important;
     color: var(--main-color) !important;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.navbar-brand,
-.navbar-brand-white p {
-    margin-top: auto;
-    margin-bottom: auto;
+.navbar-brand>p {
     user-select: none;
     cursor: pointer;
+    line-height: normal;
+    margin: 0 !important;
+    padding: 0;
 }
 
 .navbar-collapse {
@@ -325,7 +329,7 @@ header {
 }
 
 .our-team-hero {
-    height: 650px;
+    height: 92vh;
     width: 100%;
 }
 
@@ -376,6 +380,7 @@ header {
     background-color: var(--main-color);
     border: none;
     border-radius: 2px;
+    margin-top: 20px;
     color: white;
     line-height: 1;
     transition: transform 1s;
@@ -396,6 +401,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: white;
     padding: 20px;
     margin: 20px;
     animation: fade-in 1s;
@@ -521,6 +527,21 @@ header {
     }
 }
 
+@media screen and (max-width:991px) {
+    .hero-section_left-panel>p {
+        font-size: 5.5rem;
+        text-align: center;
+    }
+
+    .our-team-hero_heading {
+        font-size: 3.5rem;
+    }
+
+    .our-team-hero_subheading {
+        font-size: 1.25rem;
+    }
+}
+
 @media screen and (max-width:875px) {
     .projects-showcase {
         padding: 2rem;
@@ -539,5 +560,12 @@ header {
 
     .posts {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .our-team-hero_main>* {
+        text-align: left;
+        justify-content: start;
     }
 }
