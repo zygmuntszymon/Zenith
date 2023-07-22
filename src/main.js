@@ -16,3 +16,13 @@ const hidden_heading = document.querySelectorAll('.hidden-heading');
 project_boxes_hidden.forEach((el) => observer.observe(el));
 hidden_heading.forEach((el) => observer.observe(el));
 
+// F&Q
+
+const faqs = document.getElementsByClassName('question');
+
+Array.from(faqs).forEach((el) => {
+    el.addEventListener('click', (q) => {
+        console.log(el.children[1].classList.toggle('show-answer'))
+    })
+});
+

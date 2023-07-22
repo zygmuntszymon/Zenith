@@ -18,6 +18,12 @@ Text Domain: zenith
     --site-gray: rgb(68, 68, 68);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -351,6 +357,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-bottom: 125px;
 }
 
 .our-team-hero_heading {
@@ -464,6 +471,67 @@ header {
 
 .member-meta>a:hover {
     color: #38343a;
+}
+
+.faq-panel {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--sec-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq-panel_top {
+    padding: 30px 0;
+}
+
+.faq-panel_top>h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    width: 90%;
+    max-width: 1000px;
+    height: fit-content;
+    background: white;
+    color: black;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.question-text {
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.answer {
+
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all .4s;
+}
+
+.answer-text {
+    text-align: center;
+
+    padding: 6px 0;
+    padding-left: 15px;
+}
+
+.show-answer {
+
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 @-webkit-keyframes flip-in-hor-bottom {
