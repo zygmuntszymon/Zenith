@@ -21,8 +21,18 @@ hidden_heading.forEach((el) => observer.observe(el));
 const faqs = document.getElementsByClassName('question');
 
 Array.from(faqs).forEach((el) => {
-    el.addEventListener('click', (q) => {
-        console.log(el.children[1].classList.toggle('show-answer'))
+    el.addEventListener('click', () => {
+        showAnswer(el)
     })
 });
+
+function showAnswer(el) {
+    Array.from(faqs).forEach((e) => {
+        if (e.children[1].classList.contains('show-answer')) {
+            e.children[1].classList.remove('show-answer')
+        }
+    });
+    console.log(el.children[1].classList.toggle('show-answer'))
+
+}
 

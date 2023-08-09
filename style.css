@@ -497,7 +497,7 @@ header {
 .question {
     width: 90%;
     max-width: 1000px;
-    height: fit-content;
+    height: min-content;
     background: white;
     color: black;
     margin-bottom: 25px;
@@ -510,28 +510,32 @@ header {
     text-align: center;
     padding-left: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     margin: 0;
 }
 
 .answer {
-
+    display: none;
     opacity: 0;
-    transform: scaleY(0);
-    transition: all .4s;
+    transform: translateY(-100%);
+    transition: all .1s;
+    height: auto;
 }
 
 .answer-text {
     text-align: center;
 
-    padding: 6px 0;
-    padding-left: 15px;
+    padding: 6px 0px;
+    /*padding-left: 15px;*/
 }
 
 .show-answer {
-
+    display: block;
+    background-color: #006400;
+    color: white;
     opacity: 1;
-    transform: scaleY(1);
+    transform: translateY(0);
+    margin-bottom: 0;
 }
 
 @-webkit-keyframes flip-in-hor-bottom {

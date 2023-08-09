@@ -56,7 +56,6 @@
         <div class="answer">
             <p class="answer-text">
                 Posuere tempor in et massa
-                <i class="fa-solid fa-chevron-down"></i>
             </p>
         </div>
     </div>
