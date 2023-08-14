@@ -495,7 +495,7 @@ header {
 }
 
 .question {
-    width: 90%;
+    /* width: 90%;
     max-width: 1000px;
     height: min-content;
     background: white;
@@ -503,15 +503,17 @@ header {
     margin-bottom: 25px;
     border-radius: 3px;
     font-size: 1.1rem;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .question-text {
-    text-align: center;
+    /* text-align: center;
     padding-left: 20px;
     padding-top: 10px;
+
+    margin: 0; */
+    font-size: 1rem;
     padding-bottom: 0px;
-    margin: 0;
 }
 
 .answer {
@@ -531,11 +533,12 @@ header {
 
 .show-answer {
     display: block;
-    background-color: #006400;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     opacity: 1;
     transform: translateY(0);
     margin-bottom: 0;
+    border-radius: 3px;
 }
 
 @-webkit-keyframes flip-in-hor-bottom {
